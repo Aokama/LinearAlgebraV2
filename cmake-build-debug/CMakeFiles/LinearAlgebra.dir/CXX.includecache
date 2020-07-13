@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kanba/CLionProjects/LinearAlgebra/Dimension.h
+
+/Users/kanba/CLionProjects/LinearAlgebra/Matrix.h
+Dimension.h
+/Users/kanba/CLionProjects/LinearAlgebra/Dimension.h
+Vector.h
+/Users/kanba/CLionProjects/LinearAlgebra/Vector.h
+vector
+-
+
+/Users/kanba/CLionProjects/LinearAlgebra/PowerIterationMethod.h
+Matrix.h
+/Users/kanba/CLionProjects/LinearAlgebra/Matrix.h
+Vector.h
+/Users/kanba/CLionProjects/LinearAlgebra/Vector.h
+
+/Users/kanba/CLionProjects/LinearAlgebra/Vector.h
+Dimension.h
+/Users/kanba/CLionProjects/LinearAlgebra/Dimension.h
+vector
+-
+
+/Users/kanba/CLionProjects/LinearAlgebra/main.cpp
+Matrix.h
+/Users/kanba/CLionProjects/LinearAlgebra/Matrix.h
+PowerIterationMethod.h
+/Users/kanba/CLionProjects/LinearAlgebra/PowerIterationMethod.h
+
