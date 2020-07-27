@@ -5,6 +5,8 @@
 #include "EulerMethod.h"
 #include "Matrix.h"
 
+#include <math.h>
+
 EulerMethod::EulerMethod() = default;
 
 EulerMethod::EulerMethod(double (*du)(double, double), int max_count) {
@@ -33,3 +35,17 @@ void EulerMethod::run(int max_iteration, bool debug_mode) {
         mat_y.show10d("(Col 1 = t(n), Col 2 = y(n))");
     }
 }
+
+Matrix EulerMethod::get_error_matrix(double (*func)(double)) {
+    Matrix mat = mat_y;
+    for(int i = 1; i <= mat.get_dim().row(); i++){
+        mat.set(i, 2, abs(mat.at(i, 2) - func(mat.at(i, 1))));
+    }
+    return mat;
+}
+
+Matrix EulerMethod::get_calculated_matrix() {
+    return this->mat_y;
+}
+
+

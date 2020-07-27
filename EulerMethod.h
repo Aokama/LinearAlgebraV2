@@ -20,6 +20,8 @@ public:
     void set_initial_y(double y);
     void set_range_t(double min, double max);
     void run(int max_iteration, bool debug_mode);
+    Matrix get_error_matrix(double (*func)(double));
+    Matrix get_calculated_matrix();
 };
 
 
