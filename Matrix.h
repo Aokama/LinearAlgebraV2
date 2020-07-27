@@ -24,6 +24,8 @@ public:
     double at(int i, int j);
     void set(int i, int j, double value);
 
+    void show10d(const char name[]);
+
     Vector operator * (Vector right);
 };
 

@@ -40,6 +40,18 @@ void Matrix::set(int i, int j, double value) {
     matrix[i - 1][j - 1] = value;
 }
 
+void Matrix::show10d(const char *name) {
+    printf("======== %s ========\n", name);
+    for(int i = 1; i <= dimension.row(); i++){
+        for(int j = 1; j <= dimension.col(); j++){
+            printf("%1.10e\t", at(i, j));
+        }
+        printf("\n");
+    }
+    printf("======== %s ========\n", name);
+}
+
+
 Vector Matrix::operator*(Vector right) {
     if(!dimension.can_multiply(right.get_dim())){
         printf("Unable to multiply.\n");
@@ -55,4 +67,3 @@ Vector Matrix::operator*(Vector right) {
     }
     return result;
 }
-

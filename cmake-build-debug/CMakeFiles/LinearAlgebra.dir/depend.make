@@ -4,6 +4,12 @@
 CMakeFiles/LinearAlgebra.dir/Dimension.cpp.o: ../Dimension.cpp
 CMakeFiles/LinearAlgebra.dir/Dimension.cpp.o: ../Dimension.h
 
+CMakeFiles/LinearAlgebra.dir/EulerMethod.cpp.o: ../Dimension.h
+CMakeFiles/LinearAlgebra.dir/EulerMethod.cpp.o: ../EulerMethod.cpp
+CMakeFiles/LinearAlgebra.dir/EulerMethod.cpp.o: ../EulerMethod.h
+CMakeFiles/LinearAlgebra.dir/EulerMethod.cpp.o: ../Matrix.h
+CMakeFiles/LinearAlgebra.dir/EulerMethod.cpp.o: ../Vector.h
+
 CMakeFiles/LinearAlgebra.dir/Matrix.cpp.o: ../Dimension.h
 CMakeFiles/LinearAlgebra.dir/Matrix.cpp.o: ../Matrix.cpp
 CMakeFiles/LinearAlgebra.dir/Matrix.cpp.o: ../Matrix.h
@@ -20,8 +26,8 @@ CMakeFiles/LinearAlgebra.dir/Vector.cpp.o: ../Vector.cpp
 CMakeFiles/LinearAlgebra.dir/Vector.cpp.o: ../Vector.h
 
 CMakeFiles/LinearAlgebra.dir/main.cpp.o: ../Dimension.h
+CMakeFiles/LinearAlgebra.dir/main.cpp.o: ../EulerMethod.h
 CMakeFiles/LinearAlgebra.dir/main.cpp.o: ../Matrix.h
-CMakeFiles/LinearAlgebra.dir/main.cpp.o: ../PowerIterationMethod.h
 CMakeFiles/LinearAlgebra.dir/main.cpp.o: ../Vector.h
 CMakeFiles/LinearAlgebra.dir/main.cpp.o: ../main.cpp
 

@@ -57,7 +57,7 @@ void PowerIterationMethod::run(int max_iteration, bool debug_mode) {
     else {
         if(debug_mode){
             printf("Converged in %d times iterations.\n", c);
-            printf("Max absolute eigenvalue is rambda = %1.8e\n", r);
+            printf("Max absolute eigenvalue is rambda = %1.8e\n", abs(r));
             printf("Eigenvector is below...\n");
             x.show8d("Eigenvector x");
         }
